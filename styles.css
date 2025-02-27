@@ -35,8 +35,13 @@
         }
 
         a {
-            color: var(--accent-color);
+            background-color: #aaaaaa;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
             text-decoration: none;
+            display: inline-block;
+            border-radius: 8px;
         }
 
         a:hover {

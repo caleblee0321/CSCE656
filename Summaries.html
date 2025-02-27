@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-02-26 Wed 19:07 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Summaries</title>
+<meta name="author" content="Caleb Lee" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Summaries</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org41df03c">1. <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-01-16 Thu&gt;</span></span></a>
+<ul>
+<li><a href="#org113732e">1.1. Summary</a></li>
+<li><a href="#org162bd14">1.2. Learned</a></li>
+<li><a href="#orgbb1fb3f">1.3. Uncertain</a></li>
+</ul>
+</li>
+<li><a href="#orgb515cc2">2. <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-01-21 Tue&gt;</span></span></a>
+<ul>
+<li><a href="#org82fd786">2.1. Summary</a></li>
+<li><a href="#org9cfa627">2.2. Learned</a></li>
+<li><a href="#org8ac3b8c">2.3. Uncertain</a></li>
+</ul>
+</li>
+<li><a href="#orgc9974a6">3. <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-01-23 Thu&gt;</span></span></a>
+<ul>
+<li><a href="#orgc204aae">3.1. Summary</a></li>
+<li><a href="#orgca85cf5">3.2. Learned</a></li>
+<li><a href="#org82675c2">3.3. Uncertain</a></li>
+</ul>
+</li>
+<li><a href="#orgb6b94b2">4. <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-01-28 Tue&gt;</span></span></a>
+<ul>
+<li><a href="#org497d644">4.1. Summary</a></li>
+<li><a href="#orgda76725">4.2. Learned</a></li>
+<li><a href="#org92913bf">4.3. Uncertain</a></li>
+</ul>
+</li>
+<li><a href="#orge72f36b">5. <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-01-30 Thu&gt;</span></span></a>
+<ul>
+<li><a href="#org7a42a2a">5.1. Summary</a></li>
+<li><a href="#org01430bd">5.2. Learned</a></li>
+<li><a href="#org8d3f4ec">5.3. Uncertain</a></li>
+</ul>
+</li>
+<li><a href="#orgde7957f">6. <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-02-04 Tue&gt;</span></span></a>
+<ul>
+<li><a href="#org2347da3">6.1. Summary</a></li>
+<li><a href="#org175b4a8">6.2. Learned</a></li>
+<li><a href="#org0cc7ad2">6.3. Uncertain</a></li>
+</ul>
+</li>
+<li><a href="#org56fc8d9">7. <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-02-11 Tue&gt;</span></span></a>
+<ul>
+<li><a href="#orgb340211">7.1. Summary</a></li>
+<li><a href="#orgb1b19a9">7.2. Learned</a></li>
+<li><a href="#org6240e44">7.3. Uncertain</a></li>
+</ul>
+</li>
+<li><a href="#orgfbb8e30">8. <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-02-13 Thu&gt;</span></span></a>
+<ul>
+<li><a href="#orgf72620e">8.1. Summary</a></li>
+<li><a href="#orge372188">8.2. Learned</a></li>
+<li><a href="#org48114d4">8.3. Uncertain</a></li>
+</ul>
+</li>
+<li><a href="#orgf5a3514">9. <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-02-18 Tue&gt;</span></span></a>
+<ul>
+<li><a href="#orgb059444">9.1. Summary</a></li>
+<li><a href="#orgc1ba00d">9.2. Learned</a></li>
+<li><a href="#orgfe7b8d1">9.3. Uncertain</a></li>
+</ul>
+</li>
+<li><a href="#org9e4b6a0">10. <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-02-20 Thu&gt;</span></span></a>
+<ul>
+<li><a href="#org719320b">10.1. Summary</a></li>
+<li><a href="#org0b724c1">10.2. Learned</a></li>
+<li><a href="#org5cf6c8e">10.3. Uncertain</a></li>
+</ul>
+</li>
+<li><a href="#orgc3405fa">11. <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-02-27 Thu&gt;</span></span></a>
+<ul>
+<li><a href="#org88e16e1">11.1. Summary</a></li>
+<li><a href="#org2ee4485">11.2. Learned</a></li>
+<li><a href="#orgf6cabe5">11.3. Uncertain</a></li>
+</ul>
+</li>
+<li><a href="#org945d606">12. <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-03-04 Tue&gt;</span></span></a>
+<ul>
+<li><a href="#orgcc9a129">12.1. Summary</a></li>
+<li><a href="#orgb87132f">12.2. Learned</a></li>
+<li><a href="#orgf8d3ca5">12.3. Uncertain</a></li>
+</ul>
+</li>
+<li><a href="#org85d78be">13. <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-03-06 Thu&gt;</span></span></a>
+<ul>
+<li><a href="#org4da03bd">13.1. Summary</a></li>
+<li><a href="#org196faf2">13.2. Learned</a></li>
+<li><a href="#org235c331">13.3. Uncertain</a></li>
+</ul>
+</li>
+<li><a href="#org13c55e6">14. <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-03-18 Tue&gt;</span></span></a>
+<ul>
+<li><a href="#orgd85b94a">14.1. Summary</a></li>
+<li><a href="#org3f8e4b1">14.2. Learned</a></li>
+<li><a href="#org201d127">14.3. Uncertain</a></li>
+</ul>
+</li>
+<li><a href="#orgff6c41f">15. <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-03-20 Thu&gt;</span></span></a>
+<ul>
+<li><a href="#org1368850">15.1. Summary</a></li>
+<li><a href="#orgbcee220">15.2. Learned</a></li>
+<li><a href="#org874ca40">15.3. Uncertain</a></li>
+</ul>
+</li>
+<li><a href="#org0490944">16. <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-03-27 Thu&gt;</span></span></a>
+<ul>
+<li><a href="#orgef72083">16.1. Summary</a></li>
+<li><a href="#org8f5e62e">16.2. Learned</a></li>
+<li><a href="#orgd9386a4">16.3. Uncertain</a></li>
+</ul>
+</li>
+<li><a href="#orga5a52eb">17. <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-04-01 Tue&gt;</span></span></a>
+<ul>
+<li><a href="#orga820557">17.1. Summary</a></li>
+<li><a href="#org7b5f835">17.2. Learned</a></li>
+<li><a href="#orge8dbca8">17.3. Uncertain</a></li>
+</ul>
+</li>
+<li><a href="#org16168ab">18. <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-04-03 Thu&gt;</span></span></a>
+<ul>
+<li><a href="#orgc538a5d">18.1. Summary</a></li>
+<li><a href="#org79e778f">18.2. Learned</a></li>
+<li><a href="#org1ed469d">18.3. Uncertain</a></li>
+</ul>
+</li>
+<li><a href="#orgc9f358e">19. <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-04-08 Tue&gt;</span></span></a>
+<ul>
+<li><a href="#orge4bbcee">19.1. Summary</a></li>
+<li><a href="#org859a4ae">19.2. Learned</a></li>
+<li><a href="#org8392d62">19.3. Uncertain</a></li>
+</ul>
+</li>
+<li><a href="#org416b1f7">20. <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-04-10 Thu&gt;</span></span></a>
+<ul>
+<li><a href="#orge06483b">20.1. Summary</a></li>
+<li><a href="#orgbe6423b">20.2. Learned</a></li>
+<li><a href="#org00a3050">20.3. Uncertain</a></li>
+</ul>
+</li>
+<li><a href="#org5981faf">21. <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-04-15 Tue&gt;</span></span></a>
+<ul>
+<li><a href="#org910246d">21.1. Summary</a></li>
+<li><a href="#org8f9c98b">21.2. Learned</a></li>
+<li><a href="#org44a4971">21.3. Uncertain</a></li>
+</ul>
+</li>
+<li><a href="#org69f7632">22. Assignment 2</a>
+<ul>
+<li><a href="#orge8fdc0d">22.1. Describe your experiences with generative AI tools such as ChatGPT, Claude, and Google Gemini. This should include how you do and do not use these tools. Be specific. (1/2 page)</a></li>
+<li><a href="#org851b6d8">22.2. Given your experience, what are these tools good at and what are they not good at? If you have not used the tools, discuss why you have not used them. (1/2 page)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org41df03c" class="outline-2">
+<h2 id="org41df03c"><span class="section-number-2">1.</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-01-16 Thu&gt;</span></span></h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org113732e" class="outline-3">
+<h3 id="org113732e"><span class="section-number-3">1.1.</span> Summary</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+The first chapter of Marshall McLuhan&rsquo;s book states that the &ldquo;medium is the message&rdquo;. Medium is defined as an extension of ourselves, which is exemplified by the usage and production of machines. Contrarily, the electric light is used as an example of a medium without a message. Despite this, a point is made that activities reliant on the electric light become the content of the electric light to support that the medium is the message. McLuhan continues to emphasize medium of media in addition to the environmental and cultural contexts in which media operates, such as during the French Revolution or in the context of the English institution of Parliament. Media is also associated with changes in the proliferation and spread of culture, leading to &ldquo;detribalization&rdquo;. The medium is continuously stressed, as society tends to focus on the &ldquo;content&rdquo; over the invisible medium that gradually affects perception.
+</p>
+
+<p>
+The second chapter categorizes hot and cold media based on the amount of information given to the listener. The &ldquo;hotter&rdquo; the media is, the more information is given to the listener and the less response input is required by the listener. When tied into different contexts, the disruptive impact of hot media in culture is exemplified during wars, or the introduction of new mediums fragmenting existing hierarchies in McLuhan&rsquo;s example of Robert Theobald&rsquo;s &ldquo;The Rich and the Poor&rdquo;. Over time, however, once hot media can cool down due to exhaustion. In the case of cold, numb, war, or hot, alarming situations, McLuhan considers humor and play to appropriately cool down culture.
+With the cooling of a medium, the third chapter discusses a reversal occurs in culture, where once hot mediums actually cool culture, like electricity decentralizing instead of centralizing civilization.
+</p>
+</div>
+</div>
+<div id="outline-container-org162bd14" class="outline-3">
+<h3 id="org162bd14"><span class="section-number-3">1.2.</span> Learned</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+One thing I have learned is the categorization of hot and cold media to distinguish media that involves active or passive interaction with the listener. This is in contrast to my focus on the content dictating the hot or coldness of media consumed.
+</p>
+</div>
+</div>
+<div id="outline-container-orgbb1fb3f" class="outline-3">
+<h3 id="orgbb1fb3f"><span class="section-number-3">1.3.</span> Uncertain</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+I am still uncertain of McLuhan&rsquo;s statement that &ldquo;medium is the message&rdquo;. With emphasis on the medium itself, I can see some of the bigger picture cultural changes being influenced by a medium under the general definition of medium as an extension of ourselves, but I think McLuhan overgeneralizes his perspective of media. Though media does have significant impact on culture, it seems to overshadow historical events impacted by historical context and ideologies, which through McLuhan&rsquo;s lens of media may be viewed as &ldquo;content&rdquo;.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb515cc2" class="outline-2">
+<h2 id="orgb515cc2"><span class="section-number-2">2.</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-01-21 Tue&gt;</span></span></h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org82fd786" class="outline-3">
+<h3 id="org82fd786"><span class="section-number-3">2.1.</span> Summary</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+The first chapter of Janet H. Murray&rsquo;s Hamlet on the Holodeck introduces the reader to the holodeck from Star Trek, which Murray presents as a futuristic and utopian entertainment medium that is an evolution of older literary mediums offering similarly valuable experiences while remaining distinct from reality. The holodeck is contrasted with a technological medium in Aldous Huxley&rsquo;s Brave New World, the &ldquo;feelies&rdquo;, which are a medium with no meaning and pure sensory pleasure. Along with the &ldquo;feelies&rdquo;, various other media portrayals present warnings of computer-based entertainment and equate it to drugs and addictive substances that confuse reality and the virtual world. Murray ponders the hopes and fears of advanced technological medium, but addresses how the medium becomes &ldquo;transparent&rdquo; as the storytelling itself becomes successful.
+</p>
+
+<p>
+In the second chapter, multiform story structure is introduced and exemplified to describe its unique aspects of storytelling compared to linear stories. Multiform stories allow different points of view and self-awareness. As stories shifted toward electronic mediums, aspects of video games, the world wide web, and amusement rides are presented to describe how they allow for unique immersion as well as similarities to past mediums.
+</p>
+</div>
+</div>
+<div id="outline-container-org9cfa627" class="outline-3">
+<h3 id="org9cfa627"><span class="section-number-3">2.2.</span> Learned</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+I have learned about the multiform structure of stories and the evolution of other older characteristics of storytelling such as hypertext referencing. The use of familiar examples shed light on certain structures and interactive aspects in story mediums that I was unaware of predating computer-based mediums.
+</p>
+</div>
+</div>
+<div id="outline-container-org8ac3b8c" class="outline-3">
+<h3 id="org8ac3b8c"><span class="section-number-3">2.3.</span> Uncertain</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+Something I find uncertain yet interesting is the thinning barrier between writer/author and audience of a story in computer-based mediums.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc9974a6" class="outline-2">
+<h2 id="orgc9974a6"><span class="section-number-2">3.</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-01-23 Thu&gt;</span></span></h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgc204aae" class="outline-3">
+<h3 id="orgc204aae"><span class="section-number-3">3.1.</span> Summary</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+In the third chapter, the expressive and immersive aspects of cinema is described and transitions to the immersion of a conversation with the natural language processing chatbot ELIZA. Murray explains that digital environments have four essential properties of being procedural, participatory, spatial, and encyclopedic to make digital environments interactive and immersive. Hypertext and computer simulations are brought up to exemplify the portrayal of complexity to address the need for early mediums to create a demand for its unique properties.
+</p>
+
+<p>
+The fourth chapter discusses the rules of immersion and the boundaries of the computer medium like the fourth wall boundary in cinema. For computer-based media, Murray talks about the creating an immersive experience like a visitation that is participatory yet constrained in examples. To create immersion, digital environments must allow the reader to create belief. The fourth wall boundary equivalent in the computer medium is exemplified by MUD and LARP environments where people act out personas to one another as a form of immersive entertainment and storytelling.
+</p>
+</div>
+</div>
+<div id="outline-container-orgca85cf5" class="outline-3">
+<h3 id="orgca85cf5"><span class="section-number-3">3.2.</span> Learned</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+Given my limited participation and experience with online games and media involving role-playing, I learned of viewing MUD and LARP in a structured, participatory lens in which there exists constraints and boundaries set by the participant staying in character of a designated role.
+</p>
+</div>
+</div>
+<div id="outline-container-org82675c2" class="outline-3">
+<h3 id="org82675c2"><span class="section-number-3">3.3.</span> Uncertain</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+I can see the similarities and parallels with the level of immersion in cinema and text, but there is lot of variety in the forms of entertainment in computer based medium. However, I am uncertain of the &ldquo;boundary&rdquo; comparison for video games in computer-based media with the fourth wall for cinema, as the role playing in video games seem to have more in common with party or board games, like Mafia or Secret Hitler.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb6b94b2" class="outline-2">
+<h2 id="orgb6b94b2"><span class="section-number-2">4.</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-01-28 Tue&gt;</span></span></h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org497d644" class="outline-3">
+<h3 id="org497d644"><span class="section-number-3">4.1.</span> Summary</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Chapter 5 goes over the agency of immersive environments, or the power to make meaningful actions with significant results. Agency takes the form of spatial navigation, which is exemplified by maze games that immerse players in a narrative environment with consequences to actions. The maze allows for a story to be structured with the story being tied to navigation of space. Another maze, with an open ended &ldquo;rhizome&rdquo; structure is described where there is no singular interpretation, but different viewpoints, like the various viewpoints from news reporting of a violent incident. The distinction is also made between stories and games in terms of interactivity, as stories only demand attention, while games require skills and interaction to solve problems or commit to actions. Murray concludes the need for games that utilize strong immersion while also raising thought provoking experiences and moral questions raised. Unique aspects of constructivist stories or worlds are presented in a manner similar to MUD environments. As I had asked in the previous report, Murray also questions the degree to which we are the authors of our own experience, but states that it is a matter of agency rather than authorship.
+</p>
+</div>
+</div>
+<div id="outline-container-orgda76725" class="outline-3">
+<h3 id="orgda76725"><span class="section-number-3">4.2.</span> Learned</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+Though I have experienced the kind of media described by Murray, I have learned more about Murray&rsquo;s definition of agency in the context of a user experiencing computer-based media and entertainment, which is distinguished from authorship.
+</p>
+</div>
+</div>
+<div id="outline-container-org92913bf" class="outline-3">
+<h3 id="org92913bf"><span class="section-number-3">4.3.</span> Uncertain</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+I am uncertain of Murray&rsquo;s claim of agency over authorship when the interactor for certain cases where a game may allow for freedom by modifying a game&rsquo;s source code or data to alter one&rsquo;s own experience. As the interactor gains more agency as well as knowledge of the inner workings of a game, I do think that some critics view of authorship may be valid.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orge72f36b" class="outline-2">
+<h2 id="orge72f36b"><span class="section-number-2">5.</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-01-30 Thu&gt;</span></span></h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org7a42a2a" class="outline-3">
+<h3 id="org7a42a2a"><span class="section-number-3">5.1.</span> Summary</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+Chapter 6 describes the transformative aspect of digital environments by comparing the interactions of a digital environment to a kaleidoscopic narrative telling a story from multiple angles. Murray continues to elaborate by stating that the enactment of stories in virtual environments in software media leads to a transformative experience as a real-world experience does. In a morphing and shape shifting electronic narrative, the endpoint of a story may not be definitive with no closure. Murray transitions to the aspect of electronic media portraying tragic narratives with all the unique transformative or kaleidoscopic aspects of the medium to tell a story.
+</p>
+
+<p>
+Chapter 7 explores what it would take to promote procedural authorship for a medium with a multiform plot. Murray describes the need to know the basic, primitive building blocks to complex conventions to form a narrative. Unlike written narratives, oral storytelling is described as multiform and fluid due to variation. The basic syntax or building blocks of narratives is presented in the context of computer-based media and storytelling frames are used to describe moments in a narrative.
+</p>
+</div>
+</div>
+<div id="outline-container-org01430bd" class="outline-3">
+<h3 id="org01430bd"><span class="section-number-3">5.2.</span> Learned</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+I have learned more about the narrative aspects of computer-based media, and the hopes for storytelling through computer-based media when it was still developing.
+</p>
+</div>
+</div>
+<div id="outline-container-org8d3f4ec" class="outline-3">
+<h3 id="org8d3f4ec"><span class="section-number-3">5.3.</span> Uncertain</h3>
+<div class="outline-text-3" id="text-5-3">
+<p>
+I find uncertainty in some of the wide generalizations made in computer-based media, as times have changed. While during Murray&rsquo;s time, systems with directed plot and high interactivity were not as common. However, today&rsquo;s technological advancements in hardware, software, and general familiarity with the described conventions has led to great variation in the kinds of stories and use cases of computers beyond story telling. Computers, as a medium, are a medium for fiction and the virtual world, but they are also very much used to engage in the real world.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgde7957f" class="outline-2">
+<h2 id="orgde7957f"><span class="section-number-2">6.</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-02-04 Tue&gt;</span></span></h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org2347da3" class="outline-3">
+<h3 id="org2347da3"><span class="section-number-3">6.1.</span> Summary</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+Chapter 8 describes Eliza&rsquo;s indirect descendants, chatterbots, like Julia in MUD environments. Chatterbots like Julia present illusion by sense of presence from appropriate behavior in a narrative environment despite its shallow intelligence. Over time, the advancements in computing hardware have led to more complex modeling of social behavior, personality and emotions.
+</p>
+
+<p>
+Chapter 9 presents the World Wide Web as an autobiography project and discusses the emergence of old digital media meeting new forms of digital content and media. The future of new media such as digital archives, mobile viewer movie narratives, 3d interactive spaces, and other forms of cyberdrama is visualized.
+</p>
+
+<p>
+Chapter 10 returns to Huxley&rsquo;s concern of technology taking the place of and robbing meaning from stories. Murray expresses her stance that literary hierarchy is built on meaning over the medium, which should become transparent over time. With emphasis on the meaning of literature, like Hamlet, Murray highlights the possibility for new impactful stories and literature through the new medium.
+</p>
+</div>
+</div>
+<div id="outline-container-org175b4a8" class="outline-3">
+<h3 id="org175b4a8"><span class="section-number-3">6.2.</span> Learned</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+I learned of the narrative aspects of the chatbot&rsquo;s immersion by illusion and visions of future media from the time in which Murray wrote her book. Some of her predictions came to be true today, and I can observe the advancements of presentation of stories in modern videogames today that make great use of 3d graphics, algorithms, and technology.
+</p>
+</div>
+</div>
+<div id="outline-container-org0cc7ad2" class="outline-3">
+<h3 id="org0cc7ad2"><span class="section-number-3">6.3.</span> Uncertain</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+I disagree with some of the credit given to chatbots and computer characters regarding emotions and social behaviors. Despite the complexity of systems and computer characters, I believe there is a special complexity to human beings that cannot be easily compared to computer characters.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org56fc8d9" class="outline-2">
+<h2 id="org56fc8d9"><span class="section-number-2">7.</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-02-11 Tue&gt;</span></span></h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-orgb340211" class="outline-3">
+<h3 id="orgb340211"><span class="section-number-3">7.1.</span> Summary</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+This paper explores the many sides of social media due to the large amounts of content generated overtime. Due to the large amount of data, this paper notes the lack of social media definitions in other papers. Analysis is done on other papers analyzing different aspects of social media through observations on manual and keyword searching and limitations of certain analysis methods. Social media research changes rapidly along with its growth, and this can be noted in the shift in research from social media underlying technologies to its use case, behaviors, and consequences.
+</p>
+</div>
+</div>
+<div id="outline-container-orgb1b19a9" class="outline-3">
+<h3 id="orgb1b19a9"><span class="section-number-3">7.2.</span> Learned</h3>
+<div class="outline-text-3" id="text-7-2">
+<p>
+I learned that social media is constantly changing and growing in a way that many studies have limitations bound to context and methods applied.
+</p>
+</div>
+</div>
+<div id="outline-container-org6240e44" class="outline-3">
+<h3 id="org6240e44"><span class="section-number-3">7.3.</span> Uncertain</h3>
+<div class="outline-text-3" id="text-7-3">
+<p>
+Certain assumptions made about social media behaviors from the past may no longer appear in the present or the future due to the dynamic growth and change in social media use and content generation. I am especially uncertain of social media trends when it comes to the topic of AI and recent advancement of LLM&rsquo;s.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgfbb8e30" class="outline-2">
+<h2 id="orgfbb8e30"><span class="section-number-2">8.</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-02-13 Thu&gt;</span></span></h2>
+<div class="outline-text-2" id="text-8">
+</div>
+<div id="outline-container-orgf72620e" class="outline-3">
+<h3 id="orgf72620e"><span class="section-number-3">8.1.</span> Summary</h3>
+<div class="outline-text-3" id="text-8-1">
+<p>
+The first paper, &ldquo;Read and Writing Fluid Hypertext Narratives&rdquo;, describes the reading and writing of fluid hypertexts that are dynamic and contain engaging elements compared to regular hypertext. Animations are added to fluid hypertexts to better engage readers without too many distracting elements added.
+</p>
+
+<p>
+The second paper, &ldquo;Only touching the surface: creating affinities between digital content and paper&rdquo;, observes the persistence of paper alongside digital mediums, as attempts have been made to digitally augment aspects of paper. Paper++ is a project proposed to modify paper in a nonrestrictive manner along with a special pen to bridge the paper and digital medium for ease of linking and transmission of information between the two mediums.
+</p>
+</div>
+</div>
+<div id="outline-container-orge372188" class="outline-3">
+<h3 id="orge372188"><span class="section-number-3">8.2.</span> Learned</h3>
+<div class="outline-text-3" id="text-8-2">
+<p>
+I learned of interactive narratives implemented in a hypertext environment in subtle ways to better engage a reader in way unique to hypermedia. I also learned of earlier attempts to more tightly couple the interactivity of paper and digital devices.
+</p>
+</div>
+</div>
+<div id="outline-container-org48114d4" class="outline-3">
+<h3 id="org48114d4"><span class="section-number-3">8.3.</span> Uncertain</h3>
+<div class="outline-text-3" id="text-8-3">
+<p>
+The fluid hypertexts are an interesting concept of telling fluid and branching narratives to make hypertexts more engaging, but I am uncertain of the burden placed on readers to remember how to navigate to another location in text and if the dynamic elements might hinder navigation. As for the Paper++ project, I am concerned of the hardware and standardization needed for widespread adoption. Furthermore, I am uncertain of the portability of the Paper++ project due to its reliance on both paper and the digital medium.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf5a3514" class="outline-2">
+<h2 id="orgf5a3514"><span class="section-number-2">9.</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-02-18 Tue&gt;</span></span></h2>
+<div class="outline-text-2" id="text-9">
+</div>
+<div id="outline-container-orgb059444" class="outline-3">
+<h3 id="orgb059444"><span class="section-number-3">9.1.</span> Summary</h3>
+<div class="outline-text-3" id="text-9-1">
+<p>
+The first paper, &ldquo;Interactive 3D sonification for the exploration of city maps&rdquo;, presents the implementation of a 3d sonified virtual map for visually impaired persons. Efforts have been previously made to make use of tactile and auditory interfaces, but this paper presents 3d sound as a new way to present information to the visually impaired. 3d sound plays multiple sounds concurrently while adjusting volume of different sounds depending on spatial locality or distance from the virtual position of the listener. Furthermore, the distance and location of geographic landmarks and locations were bound in polygonal 2d space on a map, where sounds were played at maximum volume to indicate presence within a location. This paper demonstrates an implementation prototype in a browser utilizing geographic information and auditory displays.
+</p>
+
+<p>
+The second paper, &ldquo;Understanding the Use of AI-Based Audio Generation Models by End-Users&rdquo;, explores the challenges of audio generation for videos through a user study. The user study compares user&rsquo;s preferences between using a search engine and AI audio generation tool to match a video. The search engine took less time due to better autocomplete and querying of multiple results instead of reprompting the audio generation AI model, while the AI model gave more satisfying results when given specific details.
+</p>
+</div>
+</div>
+<div id="outline-container-orgc1ba00d" class="outline-3">
+<h3 id="orgc1ba00d"><span class="section-number-3">9.2.</span> Learned</h3>
+<div class="outline-text-3" id="text-9-2">
+<p>
+I learned about the usage of a 3d auditory interface being used to map geographic locations as a means to communicate location more dynamically using only audio. This reminds me of the open source refreshable braille module used to communicate using touch dynamically. I also confirmed with other user experiences comparing the usage of search engines and generative AI models.
+</p>
+</div>
+</div>
+<div id="outline-container-orgfe7b8d1" class="outline-3">
+<h3 id="orgfe7b8d1"><span class="section-number-3">9.3.</span> Uncertain</h3>
+<div class="outline-text-3" id="text-9-3">
+<p>
+I am uncertain of the limited size of the user study in the second paper and the variance in interpretation of sounds to location in the first paper. Due to dependence on only sound, there may be possible sensory overload from limitations in concurrent audio played.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org9e4b6a0" class="outline-2">
+<h2 id="org9e4b6a0"><span class="section-number-2">10.</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-02-20 Thu&gt;</span></span></h2>
+<div class="outline-text-2" id="text-10">
+</div>
+<div id="outline-container-org719320b" class="outline-3">
+<h3 id="org719320b"><span class="section-number-3">10.1.</span> Summary</h3>
+<div class="outline-text-3" id="text-10-1">
+<p>
+The paper, &ldquo;Hypervideo expression: experiences with hyper-hitchcock&rdquo;, focuses on interactive video such as hyper video, which captures elements of internet browsing and changing TV channels. The Hyper-Hitchcock project presents a way to edit and view detail-on-demand videos that link and branch videos into different frames. Hypervideo finds use in documentaries, instructionals, home hypervideos, and music hypervideos. Usage of the Hyper-Hitchcock editor was tested in a user study, who requested more editing options to increase interactivity from the viewer. Links in hypervideo serve similar purposes in hypertext to link related, alternative, or prerequisite content. Despite the presence of links in hypervideo, the user study for the Hyper-Hitchcock viewer showed that users had a strong preference for using the key frame out of a desire for efficiency of access. This paper also explores automatic clipping of video and summary generation using algorithms along with placement of links in a hierarchical order.
+</p>
+</div>
+</div>
+<div id="outline-container-org0b724c1" class="outline-3">
+<h3 id="org0b724c1"><span class="section-number-3">10.2.</span> Learned</h3>
+<div class="outline-text-3" id="text-10-2">
+<p>
+I learned of the application of hypermedia concepts and nonlinear presentation of narratives and information in the context of videos. I am somewhat familiar with this in hypervideos used for new employee job training, but I have yet to see a good automatic summary or clip generation that is comparable to human generated summaries and clip timestamps.
+</p>
+</div>
+</div>
+<div id="outline-container-org5cf6c8e" class="outline-3">
+<h3 id="org5cf6c8e"><span class="section-number-3">10.3.</span> Uncertain</h3>
+<div class="outline-text-3" id="text-10-3">
+<p>
+I am uncertain of the quality of automatic summary generation. With the advancements in generative AI, I wonder how automatic summary generation could be improved upon in terms of hierarchical organization and generated descriptions like what Youtube does.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc3405fa" class="outline-2">
+<h2 id="orgc3405fa"><span class="section-number-2">11.</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-02-27 Thu&gt;</span></span></h2>
+<div class="outline-text-2" id="text-11">
+</div>
+<div id="outline-container-org88e16e1" class="outline-3">
+<h3 id="org88e16e1"><span class="section-number-3">11.1.</span> Summary</h3>
+<div class="outline-text-3" id="text-11-1">
+<p>
+The paper, &ldquo;HyperMeeting: Supporting Asynchronous Meetings with Hypervideo&rdquo;, discusses asynchronous meetings in the world of synchronous meetings using a chain of hyperlinked video recordings. The use case for asynchronous meetings apply to people from different time zones trying to communicate. Despite the use of recording video messages and meetings, people rarely go back to listen to the recordings. This paper hypothesizes that the ability to make comments by asynchronous participants of a meeting would encourage viewership of asynchronous members. This paper presents the project, HyperMeeting, a collaborative video playback and annotation platform. Hyperlinks are used in a way to refer and context switch to past meetings, such that the currently recorded meeting is paused to observe the earlier meeting.
+</p>
+</div>
+</div>
+<div id="outline-container-org2ee4485" class="outline-3">
+<h3 id="org2ee4485"><span class="section-number-3">11.2.</span> Learned</h3>
+<div class="outline-text-3" id="text-11-2">
+<p>
+I learned of the application of hypermedia in the context of video meetings to facilitate better asynchronous communication. I was interesting to see the usage of hyperlinks to link past records of meetings to the present moment to emulate conversation in an asynchronous manner.
+</p>
+</div>
+</div>
+<div id="outline-container-orgf6cabe5" class="outline-3">
+<h3 id="orgf6cabe5"><span class="section-number-3">11.3.</span> Uncertain</h3>
+<div class="outline-text-3" id="text-11-3">
+<p>
+I am uncertain of the application of hypermedia for video meetings. As the paper had discussed the project&rsquo;s limitations, I am uncertain of increased complexity to communicate information. I think that hypermedia benefits written text well, but the usage of hypermedia in video meetings seems disorienting due to the additional context switching of auditory and non textual visual elements. It seems that asynchronous meetings are held back by lack of clarity and slow rate of information transfer due to oral presentation of information. I can see the benefit of HyperMeeting when a demonstration or presentation needs to be given asynchronously, but it seems to fall short of regular text based commenting when it comes to simplicity and ease of use for communicating responses due to the inherent self describing nature of text.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org945d606" class="outline-2">
+<h2 id="org945d606"><span class="section-number-2">12.</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-03-04 Tue&gt;</span></span></h2>
+<div class="outline-text-2" id="text-12">
+</div>
+<div id="outline-container-orgcc9a129" class="outline-3">
+<h3 id="orgcc9a129"><span class="section-number-3">12.1.</span> Summary</h3>
+<div class="outline-text-3" id="text-12-1">
+<p>
+The first paper, &ldquo;Large Language Models and Games: A Survey and Roadmap&rdquo;, explores the impact of LLM&rsquo;s used for and with games in a survey from a top down approach. LLM&rsquo;s are typically large AI models for text generation, but they have been used to play, design, and model player behavior. LLM&rsquo;s have been configured to generate abstract tokens to take action in turn based board games, trained to handle text adventure games, and write programs to play games for them. As NPC&rsquo;s, LLM&rsquo;s excel in contextualized dialogue generation, but they have limitations in that they may hallucinate and generate dialogue that does not fit a scenario. Other uses of LLM&rsquo;s in games include being a player assistant, commentator, data analyst, game master, game mechanic, automated designer, and design assistant. LLM&rsquo;s have much potential in games along with limitations from hallucinations, biases, and factually wrong generated output.
+</p>
+
+<p>
+The second paper, &ldquo;Data-driven Prediction Games&rdquo;, focuses on the application of data driven games in other contexts such as prediction of Supreme Court votes on a case or the prediction of weather. This paper analyzes user behavior of data driven prediction on a weather forecast game, which was used to study the user&rsquo;s analysis of data to make a prediction.
+</p>
+</div>
+</div>
+<div id="outline-container-orgb87132f" class="outline-3">
+<h3 id="orgb87132f"><span class="section-number-3">12.2.</span> Learned</h3>
+<div class="outline-text-3" id="text-12-2">
+<p>
+I learned of the application of data driven LLM&rsquo;s and game engines in different contexts to aid users and developers of various games or enrich experiences. I thought it was interesting to see the application of LLM generated tokens in unique ways to solve problems that do not involve direct text generation, like playing chess or Minecraft through abstract tokens or written programs. The second paper introduced an interesting adaptation of a data driven game in a different, yet practical scenario such as weather forecasting.
+</p>
+</div>
+</div>
+<div id="outline-container-orgf8d3ca5" class="outline-3">
+<h3 id="orgf8d3ca5"><span class="section-number-3">12.3.</span> Uncertain</h3>
+<div class="outline-text-3" id="text-12-3">
+<p>
+I am also in agreement with some of the limitations listed in the first paper regarding the usage of LLM&rsquo;s in games, as LLM&rsquo;s continue to struggle in an extended context and have high financial costs to run. The requirement for expensive hardware and high energy consumption presents uncertainties for more widespread adoption of LLM&rsquo;s in applications like games.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org85d78be" class="outline-2">
+<h2 id="org85d78be"><span class="section-number-2">13.</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-03-06 Thu&gt;</span></span></h2>
+<div class="outline-text-2" id="text-13">
+</div>
+<div id="outline-container-org4da03bd" class="outline-3">
+<h3 id="org4da03bd"><span class="section-number-3">13.1.</span> Summary</h3>
+<div class="outline-text-3" id="text-13-1">
+<p>
+The first paper, &ldquo;Interactive Narrative: An Intelligent Systems Approach&rdquo;, discusses the application of narrative intelligence in an interactive narrative where users interact with a virtual world. The focus of the research is balancing coherent story progression with user agency. Previous works use a drama or experience manager to have a general guideline for a coherent experience. The experience manager intervenes by keeping track of state spaces and projecting possible future narrative trajectories based off the user&rsquo;s actions. The goal is for the experience manager to act out authorial intent in the generation of a user tailored narrative. Efforts to implement experience managers have been done with and without AI models, from manually authored to automatically generated narrative experiences.
+</p>
+
+<p>
+The second paper, &ldquo;StoryVerse: Towards Co-authoring Dynamic Plot with LLM-based Character Simulation via Narrative Planning&rdquo;, discusses the usage of LLM&rsquo;s to drive the authorial intent of a narrative, similar to the first paper. This paper presents StoryVerse, an implementation of a LLM based narrative planner and character simulator to enable authors to craft narratives from an abstract, high level description to instantiate specific, fine grain actions.
+</p>
+</div>
+</div>
+<div id="outline-container-org196faf2" class="outline-3">
+<h3 id="org196faf2"><span class="section-number-3">13.2.</span> Learned</h3>
+<div class="outline-text-3" id="text-13-2">
+<p>
+I learned of the interesting usage of LLM&rsquo;s to extend authorial intent of narrative generation to enhance fine grained details and user impacting decisions on a narrative and it&rsquo;s characters.
+</p>
+</div>
+</div>
+<div id="outline-container-org235c331" class="outline-3">
+<h3 id="org235c331"><span class="section-number-3">13.3.</span> Uncertain</h3>
+<div class="outline-text-3" id="text-13-3">
+<p>
+While the use of AI and LLM&rsquo;s is an interesting way to extend authorial intent to maximize coverage of potential branching narrative paths, I am uncertain of the inherent limitations of LLM&rsquo;s themselves that may break immersion in certain scenarios from the lack of properly constraining LLM&rsquo;s to authorial intent. I am especially concerned of over  reliance on LLM&rsquo;s for enhancing narratives where the quality of the original narrative diminishes.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org13c55e6" class="outline-2">
+<h2 id="org13c55e6"><span class="section-number-2">14.</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-03-18 Tue&gt;</span></span></h2>
+<div class="outline-text-2" id="text-14">
+</div>
+<div id="outline-container-orgd85b94a" class="outline-3">
+<h3 id="orgd85b94a"><span class="section-number-3">14.1.</span> Summary</h3>
+<div class="outline-text-3" id="text-14-1">
+<p>
+The first paper, &ldquo;A rights management approach to protection of privacy in a cloud of electronic health records&rdquo;, discusses the security and privacy of digital health records. While ensuring that only the patient can view their records, there are also concerns that full control may make the reliability of the data questionable. As such, this paper proposes a selective read-only patient centric model of storing and viewing a patient&rsquo;s records. The solution is presented on a client-server application as a hosting platform along with necessary policies and implementations to ensure digital rights management. Digital rights management is enforced by giving certain users such as the patient and physician certain permissions to modify and share, along with proper encryption and delegated rights of the user of the DRM system.
+</p>
+
+<p>
+The second paper, &ldquo;Who Owns the Social Web?&rdquo;, asks the question of the ownership of content on the web. This paper reviews a study that explores user&rsquo;s understanding of social norms impacting responses to the ethics of saving, sharing, or removing content in different scenarios. The study also reveals that users of a platform are concerned heavily depending on the context of content use and have expectations of infrastructure providers to audit content.
+</p>
+</div>
+</div>
+<div id="outline-container-org3f8e4b1" class="outline-3">
+<h3 id="org3f8e4b1"><span class="section-number-3">14.2.</span> Learned</h3>
+<div class="outline-text-3" id="text-14-2">
+<p>
+I learned of the impact of social norms on people&rsquo;s perceptions of modifying common types of content on the internet and the design of a system to secure digital rights management for important documents.
+</p>
+</div>
+</div>
+<div id="outline-container-org201d127" class="outline-3">
+<h3 id="org201d127"><span class="section-number-3">14.3.</span> Uncertain</h3>
+<div class="outline-text-3" id="text-14-3">
+<p>
+Though social norms present leads to behavior with a general consensus and some level of self-policing, I am uncertain of inherently unethical behavior that may be encouraged. On the other hand, I am also concerned of too many restrictions on copyrighting content limiting freedom of speech.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgff6c41f" class="outline-2">
+<h2 id="orgff6c41f"><span class="section-number-2">15.</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-03-20 Thu&gt;</span></span></h2>
+<div class="outline-text-2" id="text-15">
+</div>
+<div id="outline-container-org1368850" class="outline-3">
+<h3 id="org1368850"><span class="section-number-3">15.1.</span> Summary</h3>
+<div class="outline-text-3" id="text-15-1">
+<p>
+The first chapter of &ldquo;The Public Domain&rdquo; begins with the usage of market infrastructure for the growth of culture and innovation. This chapter arrives at the reason for intellectual property, where an idea takes much time and investment, but the mass production of the end product is cheap. Without intellectual property, copying becomes a virtue, which can stifle innovation without state intervention. The copyright is described as an reward incentive for giving the world permission to copy one&rsquo;s innovative ideas. The patent law is presented as a decentralized system to legalize an innovator&rsquo;s monopoly over an invention. This chapter does recognize the flaws and areas that intellectual property falls short in, such as lost copyrighted works. Though copyrighting has done it&rsquo;s job, at times, it results in the fencing of access to information that could otherwise be available and not lost. Unfortunately, the information posted on the Internet is copyrighted by default unless stated that it is not, which locks up culture like the Library of Congress does.
+</p>
+</div>
+</div>
+<div id="outline-container-orgbcee220" class="outline-3">
+<h3 id="orgbcee220"><span class="section-number-3">15.2.</span> Learned</h3>
+<div class="outline-text-3" id="text-15-2">
+<p>
+I knew of the idealistic view and purpose of the copyright and intellectual property, but I did not know how much culture was lost due to copyright duration extending beyond the duration of printing or publication.
+</p>
+</div>
+</div>
+<div id="outline-container-org874ca40" class="outline-3">
+<h3 id="org874ca40"><span class="section-number-3">15.3.</span> Uncertain</h3>
+<div class="outline-text-3" id="text-15-3">
+<p>
+The origins of intellectual property are respectable for incentivising innovators and creative thinking. However, I have concern and uncertainty of the state approving obvious or fundamental ideas that shouldn&rsquo;t be patented. If too many restrictions are imposed in a centralized manner that hinders innovation. My concern comes from the recent increase in the number of patent trolls or malicious actors that hold patents and actively harm innovation.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org0490944" class="outline-2">
+<h2 id="org0490944"><span class="section-number-2">16.</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-03-27 Thu&gt;</span></span></h2>
+<div class="outline-text-2" id="text-16">
+</div>
+<div id="outline-container-orgef72083" class="outline-3">
+<h3 id="orgef72083"><span class="section-number-3">16.1.</span> Summary</h3>
+<div class="outline-text-3" id="text-16-1">
+<p>
+The second chapter of &ldquo;The Public Domain&rdquo; begins with discussion of Thomas Jefferson&rsquo;s views of the patent. Jefferson upholds the concept of intellectual property, but he keeps it distinct from natural rights as a way to encourage to innovation. Yet, it is a temporary exclusive right given by society if society deems necessary for the sake of encouraging and rewarding innovation. As with the Miranda Warning, Boyle describes the Jefferson Warning to highlight the monopolistic dangers of intellectual property rights, which was backed by Thomas Babington Macaulay. Another concern is the suppression of works by those who inherent copyrights because of one&rsquo;s disagreements with another&rsquo;s ideas. Some writers from the French Revolution such as Diderot argued that ideas should be treated like property rights, while others such as Condorcet argued that facts and ideas cannot be treated as permanent, personal privileges. Condorcet&rsquo;s idea of limited privilege states that privilege applies only to an author&rsquo;s name and expression over an idea or fact. On the other hand, radical views from those supporting mass education viewed intellectual property as tax on literacy or knowledge.
+</p>
+
+<p>
+The third chapter compares and contrasts the &ldquo;tragedy of the commons&rdquo; and the enclosure of land with content in the abstract space of ideas and digital space, which Boyle describes as the second enclosure movement. There are unique differences in the space of information and ideas, as no use of a resource interferes with another&rsquo;s use of the same resource. Compared to arable land information is considered pure and raw for innovation and generation of new information and ideas, making it difficult to promote efficiency of the market of information while also encouraging innovation. The success of the second enclosure was described as the &ldquo;tragedy of the anticommons&rdquo; on nontangible products and resources.
+</p>
+</div>
+</div>
+<div id="outline-container-org8f5e62e" class="outline-3">
+<h3 id="org8f5e62e"><span class="section-number-3">16.2.</span> Learned</h3>
+<div class="outline-text-3" id="text-16-2">
+<p>
+I learned about the Jefferson Warning, which I agree strongly with. I have thought of both extremes of having strong enforcement of intellectual property rights and none at all, and I agree that ideas should be contrained to the time and context of invention to encorage innovation without creating a monopoly to hold back others in the same field. I also learned about the treatment of intellectual property compared to physical property and differences in characteristics that bring challenges to balancing innovation and efficiency.
+</p>
+</div>
+</div>
+<div id="outline-container-orgd9386a4" class="outline-3">
+<h3 id="orgd9386a4"><span class="section-number-3">16.3.</span> Uncertain</h3>
+<div class="outline-text-3" id="text-16-3">
+<p>
+I have concern over the patenting of facts, but I am uncertain of how intellectual property would apply to the training and generated output of AI models. Though AI models are designed by the programmer or researcher, the input is often times someone else&rsquo;s work, while the AI model will output a new piece of work mimicking aspects of the work it was trained on.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orga5a52eb" class="outline-2">
+<h2 id="orga5a52eb"><span class="section-number-2">17.</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-04-01 Tue&gt;</span></span></h2>
+<div class="outline-text-2" id="text-17">
+</div>
+<div id="outline-container-orga820557" class="outline-3">
+<h3 id="orga820557"><span class="section-number-3">17.1.</span> Summary</h3>
+<div class="outline-text-3" id="text-17-1">
+<p>
+Chapter 4 of &ldquo;The Public Domain&rdquo; describes the Internet Threat from the previous chapter, which is the concern of cheaper copying in the Internet harming content creators. Boyle describes the &ldquo;White Paper&rdquo; as a manifestation of the Internet Threat, while also pointing out that it is poorly written policy that views intellectual property with the same standards as normal property. Through the fear of Internet making copying cheaper and easier, Boyle points out that reacting with more stringent laws and rights would actually reduce the freedoms of citizens. The reason for the Internet Threat is justified by the need for high copy costs for intellectual property such that relationship between copy costs and strength of intellectual property rights is inversely related. The Sony axiom is brought up as a corollary to the Jefferson Warning stating that cheaper copying makes limitations on copyrights more important rather than less important.
+</p>
+</div>
+</div>
+<div id="outline-container-org7b5f835" class="outline-3">
+<h3 id="org7b5f835"><span class="section-number-3">17.2.</span> Learned</h3>
+<div class="outline-text-3" id="text-17-2">
+<p>
+I am somewhat familiar with the arguments Boyle presents, as I have witnessed and heard the arguments for archival of digital content, such as videogames. Something new and reassuring that I learned was that decompilation of software is fair use. I am learning about decompilation in another class and have some interest in the decompilation of videogame software for the sake of learning and creating new, better software.
+</p>
+</div>
+</div>
+<div id="outline-container-orge8dbca8" class="outline-3">
+<h3 id="orge8dbca8"><span class="section-number-3">17.3.</span> Uncertain</h3>
+<div class="outline-text-3" id="text-17-3">
+<p>
+Boyle expresses concern for the lack of openness and pessimistic Internet Threat viewpoint, but I am uncertain of the Boyle&rsquo;s opinions regarding global economic effects of the copying of intellectual property. A good example would be the cheap reproduction of American products in China, which at times overtakes local businesses or markets from where the product originated from. Would this be just another form of competition, or an abuse of cheaper labor costs to reap the rewards of the original inventor of a product?
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org16168ab" class="outline-2">
+<h2 id="org16168ab"><span class="section-number-2">18.</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-04-03 Thu&gt;</span></span></h2>
+<div class="outline-text-2" id="text-18">
+</div>
+<div id="outline-container-orgc538a5d" class="outline-3">
+<h3 id="orgc538a5d"><span class="section-number-3">18.1.</span> Summary</h3>
+<div class="outline-text-3" id="text-18-1">
+<p>
+Chapter 5 of &ldquo;The Public Domain&rdquo; describes an allegory of the farmer&rsquo;s land with nearby roads for travelers. Over time, changes in society lead to traveling ranchers and automobiles. Cattle passing through may lead to overgrazing, so farmers setup barbed wire to deter passing of cattle. In the world of intellectual property, the usage of encryption and passwords parallels to the barbed wire fence. In addition, the usage of legislation is applied as a way to enforce forbiddance of copyright circumvention through the DMCA. Boyle presents a case of a consumer trying to bypass region locked DVD&rsquo;s, which resulted in dispute regarding consumer control of product and infringement of copyright was disputed in the courts. Boyle reinforces that copyright helps freedom of expression, but it should not place limitations to facts. The separate use case of fair use is reserved, as a way to freedom of expression. Boyle views the DMCA as problem, as it has a tendency to make normally fair use methods illegal and reserve exclusive copyright without limitation, which violates first amendment. DMCA was viewed as a harsh policy that views computer code as virus than expression. He believes that Congress overestimated the Internet Threat and placed to harsh of a policy. Furthermore, there is concern for possible perpetual copyright by methods not enforced by law, such as encryption. For example, the iPod is designed such that it is restricted from playing other non apple music. However, the bypassing of restriction is fine with the consumer, but it breaks into Apple&rsquo;s idea of iPod, doing things that were not intended by design. This brings up the question of the ownership of device and dispute topics such as right to repair. The two viewpoints of the argument are encouragement of competition and innovation versus piracy and freeloaders. Another well known example is the business model of printer companies profit on cartridge. Though the courts side with competition, Boyle ultimately views the restraint of competition by DMCA as poor law fencing off public domain. As technology progresses, interpretations and the allegory farmer&rsquo;s tale evolves.
+</p>
+</div>
+</div>
+<div id="outline-container-org79e778f" class="outline-3">
+<h3 id="org79e778f"><span class="section-number-3">18.2.</span> Learned</h3>
+<div class="outline-text-3" id="text-18-2">
+<p>
+I learned of the DMCA policy and the actions taken by the courts supporting both sides to protect intellectual property rights and freedom of expression.
+</p>
+</div>
+</div>
+<div id="outline-container-org1ed469d" class="outline-3">
+<h3 id="org1ed469d"><span class="section-number-3">18.3.</span> Uncertain</h3>
+<div class="outline-text-3" id="text-18-3">
+<p>
+I am in agreement of Boyle&rsquo;s view, and I have uncertainty regarding anticonsumer policies regarding right to repair. From the consumer&rsquo;s point of view, I think this becomes a problem of ownership of a product that is physical property that a manufacter oversteps.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc9f358e" class="outline-2">
+<h2 id="orgc9f358e"><span class="section-number-2">19.</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-04-08 Tue&gt;</span></span></h2>
+<div class="outline-text-2" id="text-19">
+</div>
+<div id="outline-container-orge4bbcee" class="outline-3">
+<h3 id="orge4bbcee"><span class="section-number-3">19.1.</span> Summary</h3>
+<div class="outline-text-3" id="text-19-1">
+<p>
+Chapter 6 of &ldquo;The Public Domain&rdquo; describes the difficulty of handling music by copyright. Patents work on assumptions of technological development and incremental innovation, however, musical creativity and art has many examples of being inspired from previous works. Given many examples such as songs borrowing from hymns, Boyle questions if would music genres be possible with copyright, as there is an inherent innovative process in music as with engineering. Over time, Today, songs are copywrite protected by written composition and particular recording of composition. Sampling and borrowing of music has become stringent, leading Boyle to believe that poor decisions are made by the court due to how conclusions were made, as reasons too broad and ignored subtlties. At the same time rulebreaking is not good, as it blurs judgement of conduct, necessitating better policies.
+</p>
+</div>
+</div>
+<div id="outline-container-org859a4ae" class="outline-3">
+<h3 id="org859a4ae"><span class="section-number-3">19.2.</span> Learned</h3>
+<div class="outline-text-3" id="text-19-2">
+<p>
+I learned of the unique aspects of music that make it challenging to define the boundaries for copyrighting musical content to encourage innovation.
+</p>
+</div>
+</div>
+<div id="outline-container-org8392d62" class="outline-3">
+<h3 id="org8392d62"><span class="section-number-3">19.3.</span> Uncertain</h3>
+<div class="outline-text-3" id="text-19-3">
+<p>
+I am uncertain of how copyrighting of music will promote musical innovation of new music and genres. It seems to lead to more restaint than innovation, especially due to long copyright durations and strict enforcement of copying or borrowing music.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org416b1f7" class="outline-2">
+<h2 id="org416b1f7"><span class="section-number-2">20.</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-04-10 Thu&gt;</span></span></h2>
+<div class="outline-text-2" id="text-20">
+</div>
+<div id="outline-container-orge06483b" class="outline-3">
+<h3 id="orge06483b"><span class="section-number-3">20.1.</span> Summary</h3>
+<div class="outline-text-3" id="text-20-1">
+<p>
+Chapter 7 of &ldquo;The Public Domain&rdquo; describes the challenges of defining the bounds of intellectual property in the field of the sciences. Boyle states that research science does not exist for the reason that profit is vital for innovation. 2 case studies are presented to explain how scientific research coexists with intellectual property. The technology and innovations of the networked computer and synthetic biology can be constrained by the law due to its limitations and the rapid change and advancement is the fields of science. In the field of software, the copyrighting of written computer programs as expression is questioned, as copyright covers only expressive choices. If not careful, the patent covers exclusive rights beyond the blueprint, so there must be more criteria to prove usefulness for an idea to be worthy of a patent. Bill Gate&rsquo;s argues property rights for sustainable development. However, software solutions have a tendency to converge, and code is often borrowed from previous code to build on top of or optimize the writing of software. Using commons based creativity from copyrighting of software lead to free and open source software that is enforceable. Unfortunately, the US patent office gives patents to obvious ideas that shouldn&rsquo;t be patented due to the misconception that unpatentable ideas on a computer make it a novelty worthy of the embarrassment of a patent. Boyle reminds us of the intentions of Jefferson to promote science and useful arts, which are not well enforced by courts today, which are leading to deterioration of public domain. In the case of synthetic biology, scientists aim to design and identify standardization of biological and synthetic components. Ideas such as boolean algebra implemented using cells are disputed for being a patentable idea. Over time, important discoveries and ideas are built on top of existing findings, and the patenting of what could be a cornerstone idea of a field could inhibit progress. As such, Boyle believes that similar to software, there should be an open source license to promote contibution to public domain such that advances in science are not cracked or stretched from the limitations of the patent system.
+</p>
+
+<p>
+Chapter 8 discusses the Creative Commons, which exists for authors would desire to freely share their work. Creative Commons exists due to the default nature of content on the Internet being copyrighted and protections by the legal system requiring consultation of many authors. It was conceived as an alternative to the copyright where all rights to copy were reserved. Open source license GPL is introduced, where software built on open source software must also be released as open source as a way to give back contributions to public domain. The open source software movement has seen success, as it has at times produced software rivaling commercial software. Critics argue the need for it to fail due to the view of the open source movement as an idealistic commune lasting temporarily. Boyle dismisses the reason for success, but rather accepts that individuals find reasons to contribute to open source from an innate willingness to share their work. Open source&rsquo;s community dependence also highlights the significance of the developed community making use of networked goods, including businesses that also benefit from such a network. Assuming that open source software works, Boyle restates that copyright should still exist, but it should exist only for encouraging innovation. Alternative to the Internet Threat view, Boyle also states the Internet&rsquo;s lowering of communication and sharing barriers which could potentially lead to great creative results. Given the presence of laws and policies, Boyle refutes economic determinism and reminds the reader of the reason for the policies to promote the spread of ideas freely by granting few exclusive rights.
+</p>
+</div>
+</div>
+<div id="outline-container-orgbe6423b" class="outline-3">
+<h3 id="orgbe6423b"><span class="section-number-3">20.2.</span> Learned</h3>
+<div class="outline-text-3" id="text-20-2">
+<p>
+I was aware of the open source software licenses, but I learned about the details of the broader Creative Commons. I also was aware of MIT OpenCourseWare, and knowing that it is a part of the Creative Commons allowed me to better understanding the driving force expanding the public domain.
+</p>
+</div>
+</div>
+<div id="outline-container-org00a3050" class="outline-3">
+<h3 id="org00a3050"><span class="section-number-3">20.3.</span> Uncertain</h3>
+<div class="outline-text-3" id="text-20-3">
+<p>
+I disagree of dismissing the motivation to create free software as irrelevant. I think motivation behind the creation of good work is important to understanding when profit incentives are needed to motivate creation of new works and advancement of societal progress.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org5981faf" class="outline-2">
+<h2 id="org5981faf"><span class="section-number-2">21.</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-04-15 Tue&gt;</span></span></h2>
+<div class="outline-text-2" id="text-21">
+</div>
+<div id="outline-container-org910246d" class="outline-3">
+<h3 id="org910246d"><span class="section-number-3">21.1.</span> Summary</h3>
+<div class="outline-text-3" id="text-21-1">
+<p>
+Chapter 9 of &ldquo;The Public Domain&rdquo; describes the proposal to make policy on empirical evidence than speculation, along with reconsideration after implementation. Boyle states that the weighing of cost and benefit of copyright is needed, which is not present in current policy. Copyright exists to promote science rather than reward the laborer, and it should protect to right to expression while allowing others to build on work. Databases are used as a case study. Though facts cannot be copyrighted, databases have been compiled and handled differently between Europe and the US. Europe had a directive with more restrictions which led to one time boost in creation of databases, but it was an anticompetitive that did not promote further growth later. The US on the other hand, had no protections for databases, but more databases created due to accessibility of data from different databases, which also increased availability for data. Even though databases have no protection, commercialization of databases like Westlaw survived due to the requirement of a password account and provision of additional services such as as linking of content. Despite empirical evidence, Europe did not change its directive because of the perceived costliness of change. Boyle advocates for policymaking based on empirical evidence as there is too much focus on the threats of the Internet on intellectual property over its benefits.
+</p>
+
+<p>
+Chapter 10 tries to recognize the digital &ldquo;environment&rdquo; and discusses efforts to save the public domain. An argument is made advocating for the balance between open and closed domain. Boy expresses his fear of a constained web if the web were designed under today&rsquo;s policies and view of intellectual property. Therefore, he expresses the need for evidence based solutions to care for public domain like an environment where the fragile balance between freedom and protection must be maintained.
+</p>
+</div>
+</div>
+<div id="outline-container-org8f9c98b" class="outline-3">
+<h3 id="org8f9c98b"><span class="section-number-3">21.2.</span> Learned</h3>
+<div class="outline-text-3" id="text-21-2">
+<p>
+I learned of the lack of policies driven by predictions and perceptions rather than empirical evidence. Furthermore, I discovered the unwillingness and hesitancies for change for better policies that would better commons or public domain.
+</p>
+</div>
+</div>
+<div id="outline-container-org44a4971" class="outline-3">
+<h3 id="org44a4971"><span class="section-number-3">21.3.</span> Uncertain</h3>
+<div class="outline-text-3" id="text-21-3">
+<p>
+I can see comparison of the environment of intellectual property and ideas to that of the physical environment, as the physical environment has finite resources, while the information and ideas are abstract and can be infinitely produced, building on top of one another.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org69f7632" class="outline-2">
+<h2 id="org69f7632"><span class="section-number-2">22.</span> Assignment 2</h2>
+<div class="outline-text-2" id="text-22">
+</div>
+<div id="outline-container-orge8fdc0d" class="outline-3">
+<h3 id="orge8fdc0d"><span class="section-number-3">22.1.</span> Describe your experiences with generative AI tools such as ChatGPT, Claude, and Google Gemini. This should include how you do and do not use these tools. Be specific. (1/2 page)</h3>
+<div class="outline-text-3" id="text-22-1">
+<p>
+My experience with AI tools primary involve ChatGPT and other locally run LLM&rsquo;s such as Mistral. I often use ChatGPT similar to how I would search content on Reddit, Stack Exchange, Stack Overflow, or other forums. I often look for an answer to a question that is commonly asked by other people, which forums and Q&amp;A sites often have the answer too. Since ChatGPT is trained on large amounts of human generated data from the Internet, it is capable of giving comparable answers. It is different from how I would search using Google, as Google is just a search engine that queries words searched based on page ranking relevance. Google often requires some level of knowledge on what one is trying to search for, whereas ChatGPT is capable enough to make more inferences and often times understand what the user is searching for. The consolidation of answers to questions or problems makes ChatGPT a preferable tool over using Google to search for answers on forums, as the searching step is much more simplified.
+</p>
+
+<p>
+My use cases commonly involve some general, abstract explanations and occasional boilerplate for coding applications as a tool to aid my understanding to solve a specific problem. I also use ChatGPT for making scripts in languages I may not be as familiar with, such as regex or bash. However, I do not blindly copy code for my use, as this violates the university&rsquo;s honor code and takes away from my learning experience. In the case for writing, I use seldom use ChatGPT, as writing involves voice and a particular style. I know that my own writing and the generated text from ChatGPT have very different styles, so I only ever use ChatGPT for general writing advise or examples to help me craft my own writing.
+</p>
+</div>
+</div>
+<div id="outline-container-org851b6d8" class="outline-3">
+<h3 id="org851b6d8"><span class="section-number-3">22.2.</span> Given your experience, what are these tools good at and what are they not good at? If you have not used the tools, discuss why you have not used them. (1/2 page)</h3>
+<div class="outline-text-3" id="text-22-2">
+<p>
+Given my experience, these tools are very good for mocking prototypes or boilerplate designs for code or writing. LLM&rsquo;s like ChatGPT excel in tasks that have been commonly done by many other developers or writers. Simple and commonly performed tasks like leetcode problems or well known algorithms make AI tools a good cheatsheet or alternative source to Google. The generation of simple boilerplate is useful, but AI lacks in solving complex problems. AI tools are continuing to improve, but they still have a tendancy to hallucinate false answers or logic in specific math or coding problems.
+</p>
+
+<p>
+Furthermore, AI tools have limited approaches to very specific or specialized problems. A good example would be reverse engineering of software or hardware. AI tools would be good for giving general advise or directions to use other commonly use utilities, but would have limits to do specific steps in niche domains. Often times, AI tools are not trained of all proprietary information along with inherent limits to performing consistently.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Caleb Lee</p>
+<p class="date">Created: 2025-02-26 Wed 19:07</p>
+</div>
+</body>
+</html>
